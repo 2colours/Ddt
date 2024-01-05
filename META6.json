@@ -40,7 +40,7 @@
     "Ddt::Template": "lib/Ddt/Template.rakumod"
   },
   "raku": "6.c",
-  "source-url": "https://github.com/kalkin/Ddt.git",
+  "source-url": "https://github.com/2colours/Ddt.git",
   "tags": [
     "authoring",
     "command line",
@@ -55,5 +55,5 @@
     "File::Temp",
     "Test::META"
   ],
-  "version": "0.8.0"
+  "version": "0.8.1"
 }
