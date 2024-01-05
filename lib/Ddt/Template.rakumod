@@ -58,7 +58,7 @@ jobs:
 EOF
 
 test => qq:to/END_OF_TEST/,
-use v6;
+use v6.d;
 #`(
 $license.header()
 )
@@ -71,7 +71,7 @@ done-testing;
 END_OF_TEST
 
 test-meta => qq:to/END_OF_META_TEST/,
-use v6;
+use v6.d;
 #`(
 $license.header()
 )
@@ -84,8 +84,8 @@ plan 1;
 meta-ok relaxed-name => $relaxed-name;
 END_OF_META_TEST
 
-module => qq:to/EOD_OF_MODULE/,
-use v6;
+module => qq:to/END_OF_MODULE/,
+use v6.d;
 #`(
 $license.header()
 )
@@ -117,7 +117,7 @@ $module is ...
 $license.note()
 
 =end pod
-EOD_OF_MODULE
+END_OF_MODULE
 
     %template;
 }

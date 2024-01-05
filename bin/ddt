@@ -1,5 +1,5 @@
 #!/usr/bin/env raku
-use v6;
+use v6.c;
 use Ddt::Plugins::Build;
 use Ddt::Plugins::Unit-Generator;
 use Ddt::Plugins::Hack;

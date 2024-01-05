@@ -82,7 +82,7 @@ multi MAIN("generate", "test",
     $_ = "#`(\n" ~ $license ~ ')' with $license;
     with $description {
         spurt $new-test, qq:to/END/;
-        use v6;
+        use v6.d;
         $license
         use Test;
         plan 1;
@@ -93,7 +93,7 @@ multi MAIN("generate", "test",
         END
     } else {
         spurt $new-test, qq:to/END/;
-        use v6;
+        use v6.d;
         $license
         use Test;
         plan 1;

@@ -1,4 +1,4 @@
-use v6;
+use v6.c;
 use File::Temp;
 use Zef;
 use Zef::Client;
