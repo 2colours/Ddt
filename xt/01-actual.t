@@ -46,7 +46,7 @@ subtest "META6 description", {
     my $meta = from-json( "META6.json".IO.slurp );
     is $meta<description>, "blah blah blah", "Default generated description";
     "lib/Hello.rakumod".IO.spurt: q:to/EOF/;
-    use v6.c;
+    use v6.d;
     unit module Hello;
 
     =begin pod
