@@ -202,8 +202,8 @@ method !make-content {
 
 method !init-vcs-repo {
     my $git-dir = $.main-dir.absolute;
-    qqx{cd $git-dir && git init}.slurp-rest;
-    qqx{cd $git-dir && git add .}.slurp-rest;
+    run(flat(<git init -C>, $git-dir), :out).out.slurp-rest;
+    run(flat(<git add . -C>, $git-dir), :out).out.slurp-rest;
 }
 
 
