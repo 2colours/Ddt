@@ -23,19 +23,38 @@ Session.vim
 tags
 EOF
 
-travis => qq:to/EOF/,
-os:
-  - linux
-  - osx
-language: raku
-raku:
-  - latest
-install:
-  - rakubrew build-zef
-  - zef --/test --deps-only install .
-script:
-  - zef test .
-sudo: false
+github-action => Q:to/EOF/,
+name: test
+
+on:
+  push:
+    branches:
+      - '*'
+    tags-ignore:
+      - '*'
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  raku:
+    strategy:
+      fail-fast: false
+      matrix:
+        os:
+          - ubuntu-latest
+          - macos-latest
+          - windows-latest
+        raku-version:
+          - "latest"
+          - "2023.08"
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: Raku/setup-raku@v1
+        with:
+          raku-version: ${{ matrix.raku-version }}
+      - name: Run tests and Install
+        run: zef install . --debug
 EOF
 
 test => qq:to/END_OF_TEST/,
