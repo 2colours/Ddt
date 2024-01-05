@@ -1,5 +1,5 @@
 {
-  "auth": "kalkin",
+  "auth": "zef:2colours",
   "authors": [
     "Bahtiar `kalkin-` Gadimov",
     "Polgár Márton",
@@ -55,5 +55,5 @@
     "File::Temp",
     "Test::META"
   ],
-  "version": "0.7.0"
+  "version": "0.8.0"
 }
