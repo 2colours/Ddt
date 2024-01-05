@@ -144,7 +144,7 @@ method generate-README {
     {
         if my $markdown = self.render-markdown( $file )
         {
-            return $.main-dir.child("README.md").spurt: $header ~ $markdown;
+            return $.main-dir.child("README.md").spurt: $markdown;
         }
     }
 
