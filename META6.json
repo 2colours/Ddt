@@ -41,9 +41,6 @@
   },
   "raku": "6.c",
   "source-url": "https://github.com/kalkin/Ddt.git",
-  "support": {
-    "source": null
-  },
   "tags": [
     "authoring",
     "command line",

@@ -116,7 +116,7 @@ method generate-META6 {
     my $meta = $.META6;
 
     $meta.raku-version //= $*RAKU.version;
-    if $meta.authors ~~ Empty || git-user() ∉ $meta.authors {
+    if git-user() ∉ $meta.authors {
         $meta.authors.push: git-user
     }
     if $meta.test-depends ~~ Empty || "Test::META" ∉ $meta.test-depends {
