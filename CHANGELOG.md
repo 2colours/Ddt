@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [0.8.2] - Unreleased
 
+### Fixed
+
+- un-break Build extension detection
+
 ### Changed
 
 - shell injection on `git` commands eliminated

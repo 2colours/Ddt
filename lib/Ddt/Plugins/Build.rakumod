@@ -10,7 +10,7 @@ multi MAIN("build") is export
     my $ddt = Ddt::Distribution.new: TOPDIR;
     $ddt.generate-README;
     $ddt.generate-META6;
-    return unless "Build".IO.extension(builder-extension.any, :0parts).f;
+    return unless "Build".IO.extension(builder-extensions.any, :0parts).f;
     run "zef", "build", ".";
 }
 
