@@ -5,6 +5,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [0.8.2] - Unreleased
+
+### Changed
+
+- shell injection on `git` commands eliminated
+
+## [0.8.1] - 2024-01-05
+
+### Changed
+
+- Build files detected with various more recent extensions
+
 ## [0.8.0] - 2024-01-05
 
 ### Changed
